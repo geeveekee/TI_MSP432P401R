@@ -1,6 +1,7 @@
 --cpu=Cortex-M4.fp.sp
 ".\objects\test.o"
 ".\objects\blink.o"
+".\objects\main.o"
 ".\objects\startup_msp432p401r_uvision.o"
 ".\objects\system_msp432p401r.o"
 --strict --scatter ".\Objects\proj1.sct"

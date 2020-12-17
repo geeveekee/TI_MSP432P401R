@@ -3,20 +3,18 @@
 
 int i;
 
-void delay()
+void onedelay()
 {
 	for(i=0; i<10000; i++);
 }
-int main()
+int onemain()
 {
 	P4->DIR= red_led; // P4.5
 	
 	while(1)
 	{
 		P4->OUT ^= red_led; // xor operation
-		delay();
+		onedelay();
 		
-		
-
 	}
 }

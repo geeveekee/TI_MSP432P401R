@@ -393,6 +393,16 @@
               <FileType>1</FileType>
               <FilePath>.\Programs\blink.c</FilePath>
             </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Programs\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>togglergb.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Programs\togglergb.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
