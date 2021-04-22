@@ -1,0 +1,39 @@
+#include "msp.h"
+void dig(int i){
+P4->OUT = 0x00;
+switch (i){
+case 0:
+P4->OUT = 0x7E; break;
+case 1:
+P4->OUT = 0x30; break;
+case 2:
+P4->OUT = 0x6C; break;
+case 3:
+P4->OUT = 0x79; break;
+case 4:
+P4->OUT = 0x33; break;
+case 5:
+P4->OUT = 0x5B; break;
+case 6:
+P4->OUT = 0x5F; break;
+case 7:
+P4->OUT = 0x30; break;
+case 8:
+P4->OUT = 0x7F; break;
+case 9:
+P4->OUT = 0x73; break;
+default:
+P4->OUT = 0x00; break;
+}
+}
+int main(){
+WDT_A->CTL = WDT_A_CTL_PW | WDT_A_CTL_HOLD;
+P4->DIR = 0xFE;
+int i, j;
+while(1){
+for (i = 0; i < 10 ; i++){
+dig(i);
+for (j=0; j < 10000; j++);
+}
+}
+}
